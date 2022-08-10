@@ -12,33 +12,34 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="javascript:void()">Perfil </a></li>
                                 <li><a href="javascript:void()">Inbox</a></li>
-                                <li><a href="javascript:void()">Conficuración de la cuenta</a></li>
+                                <li><a routerLink="account-settings">Conficuración de la cuenta</a></li>
                                 <li><a href="javascript:void()">Salir</a></li>
                             </ul>
                         </li>
                         <li class="nav-devider"></li>
                         <li class="nav-small-cap">PERSONAL</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-themecolor pull-right">4</span></span></a>
+                        <li *ngFor="let item of menuItems"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i [class]="item.icono"></i><span class="hide-menu">
+                            {{ item.titulo }}
+                            <span class="label label-rouded label-themecolor pull-right">
+                                {{item.submenu.length}}
+                            </span></span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">OT's activas </a></li>
-                                <li><a href="index2.html">Eventos próximos</a></li>
-                                <li><a href="index3.html">Mensajes</a></li>
+                                <li *ngFor="let subMenuItem of item.submenu">
+                                    <a [routerLink]="subMenuItem.url"> {{subMenuItem.titulo}} </a>
+                                </li>
                             </ul>
 
 
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Edificios</span></a>
+                        <!-- <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Edificios</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="app-calendar.html">Por Zona</a></li>
-                                <li><a href="app-chat.html">Alfabético</a></li>
-                                <li><a href="app-ticket.html">Por Técnico</a></li>
-                                <li><a href="app-contact.html">Por Area de trabajo</a></li>
+                                <li><a href="app-calendar.html">Por Alfabeto</a></li>
+                                <li><a href="app-chat.html">Por Zona</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-email"></i><span class="hide-menu">Mensajes<span class="label label-rouded label-danger pull-right">25</span></span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="app-email.html">Bandeja de correo</a></li>
-                                <li><a href="app-email-detail.html">Detalles de la bandeja</a></li>
                                 <li><a href="app-compose.html">Redactar correo nuevo</a></li>
                             </ul>
                         </li>
@@ -65,7 +66,6 @@
                                 <li><a href="layout-single-column.html">Generar OT</a></li>
                                 <li><a href="layout-fix-header.html">Cancelar OT</a></li>
                                 <li><a href="layout-fix-sidebar.html">Seguimiento de OT</a></li>
-                                <li><a href="layout-fix-header-sidebar.html">Evidencias</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">Directorio técnicos </span></a>
@@ -73,20 +73,13 @@
                                 <li><a href="starter-kit.html">Por Alfabeto</a></li>
                                 <li><a href="pages-blank.html">Por Zona</a></li>
                                 <li><a href="pages-profile.html">Por Area de trabajo</a></li>
-                                <li><a href="pages-animation.html">Trabajos realizados</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Gráficas</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="chart-morris.html">Morris Chart</a></li>
-                                <li><a href="chart-chartist.html">Chartis Chart</a></li>
-                                <li><a href="chart-echart.html">Echarts</a></li>
-                                <li><a href="chart-flot.html">Flot Chart</a></li>
-                                <li><a href="chart-knob.html">Knob Chart</a></li>
-                                <li><a href="chart-chart-js.html">Chartjs</a></li>
-                                <li><a href="chart-sparkline.html">Sparkline Chart</a></li>
-                                <li><a href="chart-extra-chart.html">Extra chart</a></li>
-                                <li><a href="chart-peity.html">Peity Charts</a></li>
+                                <li><a href="chart-morris.html">Preventivo vs correctivo</a></li>
+                                <li><a href="chart-chartist.html">Costos</a></li>
+                                <li><a href="chart-echart.html">Desempeño</a></li>
                             </ul>
                         </li>
                         
@@ -94,14 +87,13 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="table-basic.html">Por semana</a></li>
                                 <li><a href="table-layout.html">Por mes</a></li>
-                                <li><a href="table-data-table.html">Por año</a></li>
                             </ul>
                         </li>
 
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-map-marker"></i><span class="hide-menu">Mapas</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="map-google.html">Google Maps</a></li>
-                                <li><a href="map-vector.html">Vector Maps</a></li>
+                                <li><a href="map-google.html">Mapa</a></li>
+                                <li><a href="map-vector.html">Traslados</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Trabajos no rutinarios</span></a>
@@ -109,7 +101,7 @@
                                 <li><a href="#">Emergencias</a></li>
                                 <li><a href="#">Eventos</a></li>
                             </ul>
-                        </li> 
+                        </li>  -->
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
