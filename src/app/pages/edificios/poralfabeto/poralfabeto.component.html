@@ -1,1 +1,278 @@
-<p>poralfabeto works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <!-- .left-right-aside-column-->
+            <div class="contact-page-aside">
+                <!-- .left-aside-column-->
+                
+                <!-- /.left-aside-column-->
+                <div class="right-aside ">
+                    <div class="right-page-header">
+                        <div class="d-flex">
+                            <div class="align-self-center">
+                                <h2 class="card-title m-t-10">Lista de Edificios </h2></div>
+                            <div class="ml-auto">
+                                <input type="text" id="demo-input-search2" placeholder="Buscar edificio" class="form-control"> </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <div id="add-contact" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title" id="myModalLabel">Agregar Edificio</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form class="form-horizontal form-material">
+                                                        <div class="form-group">
+                                                            <div class="col-md-12 m-b-20">
+                                                                <input type="text" class="form-control" placeholder="Nombre"> </div>
+                                                            <div class="col-md-12 m-b-20">
+                                                                <input type="text" class="form-control" placeholder="Dirección"> </div>
+                                                            <div class="col-md-12 m-b-20">
+                                                                <input type="text" class="form-control" placeholder="Ubicación"> </div>
+                                                            <div class="col-md-12 m-b-20">
+                                                                <input type="text" class="form-control" placeholder="Datos particulares"> </div>
+                                                            <div class="col-md-12 m-b-20">
+                                                                <input type="text" class="form-control" placeholder="Fecha de registro"> </div>
+                                                            <div class="col-md-12 m-b-20">
+                                                                <div class="fileupload btn btn-danger btn-rounded waves-effect waves-light"><span><i class="ion-upload m-r-5"></i>Subir imagen</span>
+                                                                    <input type="file" class="upload"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">Guardar</button>
+                                                    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cancelar</button>
+                                                </div>
+                                            </div>
+                                            <!-- /.modal-content -->
+                                        </div>
+                                        <!-- /.modal-dialog -->
+                                    </div><table id="demo-foo-addrow" class="table m-t-30 table-hover no-wrap contact-list footable-loaded footable" data-page-size="10">
+                            <thead>
+                                <tr>
+                                    <th class="footable-sortable">No<span class="footable-sort-indicator"></span></th>
+                                    <th class="footable-sortable">Nombre<span class="footable-sort-indicator"></span></th>
+                                    <th class="footable-sortable">Dirección<span class="footable-sort-indicator"></span></th>
+                                    <th class="footable-sortable">Ubicación<span class="footable-sort-indicator"></span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="footable-even">
+                                    <td><span class="footable-toggle"></span>1</td>
+                                    <td>
+                                        <a href="app-contact-detail.html">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/West_Memphis_Building.JPG/1280px-West_Memphis_Building.JPG" class="img-circle w-25 img-fluid"> Arboledas</a>
+                                    </td>
+                                    <td>Av Siempre viva #403 Col. Reforma, Puebla,Pue.</td>
+                                    <td><a href="">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        </a>
+                                    </td>
+                                
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                    </td>
+                                </tr>
+
+                                <tr class="footable-even">
+                                    <td><span class="footable-toggle"></span>2</td>
+                                    <td>
+                                        <a href="app-contact-detail.html">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Capilla_sud.JPG" class="img-circle w-25 img-fluid"> Estaca La LIbertad</a>
+                                    </td>
+                                    <td>16 de septiembre #1234 Col. Centro, Puebla, Pue.</td>
+                                    <td><a href="">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        </a>
+                                    </td>
+                                
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                    </td>
+                                </tr>
+
+                                <tr class="footable-even">
+                                    <td><span class="footable-toggle"></span>3</td>
+                                    <td>
+                                        <a href="app-contact-detail.html">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Jonesboro_Chapel.JPG/1280px-Jonesboro_Chapel.JPG" class="img-circle w-25 img-fluid"> Manantiales</a>
+                                    </td>
+                                    <td>Av. Reforma #2745 Col. Las Animas, Puebla,Pue.</td>
+                                    <td><a href="">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        </a>
+                                    </td>
+                                
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                    </td>
+                                </tr>
+
+                                <tr class="footable-even">
+                                    <td><span class="footable-toggle"></span>4</td>
+                                    <td>
+                                        <a href="app-contact-detail.html">
+                                            <img src="https://images.milenio.com/krpEc_wS-mfIU-4eAKZUjY-oyPA=/958x596/uploads/media/2021/11/04/templo-mormon-en-la-laguna_0_5_1200_747.jpeg" class="img-circle w-25 img-fluid"> Insituto Fuertes</a>
+                                    </td>
+                                    <td>Carretera Nacional #8547 Col. Vicente Guerrero, Atlixco,Pue.</td>
+                                    <td><a href="">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        </a>
+                                    </td>
+                                
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                    </td>
+                                </tr>
+
+                                <tr class="footable-even">
+                                    <td><span class="footable-toggle"></span>5</td>
+                                    <td>
+                                        <a href="app-contact-detail.html">
+                                            <img src="https://solquintanaroo.mx/wp-content/uploads/2022/05/B-4.jpg" class="img-circle w-25 img-fluid"> Bosques de Aragon</a>
+                                    </td>
+                                    <td>14 poniente #9876 Col. Juarez, Puebla,Pue.</td>
+                                    <td><a href="">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        </a>
+                                    </td>
+                                
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                    </td>
+                                </tr>
+
+                                <tr class="footable-even">
+                                    <td><span class="footable-toggle"></span>6</td>
+                                    <td>
+                                        <a href="app-contact-detail.html">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/West_Memphis_Building.JPG/1280px-West_Memphis_Building.JPG" class="img-circle w-25 img-fluid"> Oficinas de Misión</a>
+                                    </td>
+                                    <td>2 oriente #5647 Col. San Juan, Puebla,Pue.</td>
+                                    <td><a href="">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        </a>
+                                    </td>
+                                
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                    </td>
+                                </tr>
+
+                                <tr class="footable-even">
+                                    <td><span class="footable-toggle"></span>7</td>
+                                    <td>
+                                        <a href="app-contact-detail.html">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/West_Memphis_Building.JPG/1280px-West_Memphis_Building.JPG" class="img-circle w-25 img-fluid"> Antequera</a>
+                                    </td>
+                                    <td>Av Siempre viva #403 Col. Reforma, Puebla,Pue.</td>
+                                    <td><a href="">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        </a>
+                                    </td>
+                                
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                    </td>
+                                </tr>
+
+                                <tr class="footable-even">
+                                    <td><span class="footable-toggle"></span>8</td>
+                                    <td>
+                                        <a href="app-contact-detail.html">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Capilla_sud.JPG" class="img-circle w-25 img-fluid"> Angelópolis</a>
+                                    </td>
+                                    <td>Av. Vicente Guerrero #398 Col. Centro, Cuautlancingo,Pue.</td>
+                                    <td><a href="">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        </a>
+                                    </td>
+                                
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                    </td>
+                                </tr>                               
+
+                                <tr class="footable-even">
+                                    <td><span class="footable-toggle"></span>9</td>
+                                    <td>
+                                        <a href="app-contact-detail.html">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Jonesboro_Chapel.JPG/1280px-Jonesboro_Chapel.JPG" class="img-circle w-25 img-fluid"> Forjadores</a>
+                                    </td>
+                                    <td>5 sur #1402 Col. Tamaulipas, Cholula, Puebla.</td>
+                                    <td><a href="">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        </a>
+                                    </td>
+                                
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                    </td>
+                                </tr>
+
+                                
+                                
+                                
+                            </tbody> 
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">
+                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#add-contact">Agregar Edificio</button>
+                                    </td>
+                                    
+                                    <td colspan="7">
+                                        <div class="text-right">
+                                            <ul class="pagination"> <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li><li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">‹</a></li><li class="footable-page active"><a data-page="0" href="#">1</a></li><li class="footable-page"><a data-page="1" href="#">2</a></li><li class="footable-page-arrow"><a data-page="next" href="#next">›</a></li><li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li></ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- .left-aside-column-->
+                </div>
+                <!-- /.left-right-aside-column-->
+            </div>
+        </div>
+    </div>
+</div>

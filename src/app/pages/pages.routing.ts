@@ -30,6 +30,7 @@ import { TripComponent } from './maps/trip/trip.component';
 import { EmergenciesComponent } from './noroutine/emergencies/emergencies.component';
 import { EventsComponent } from './noroutine/events/events.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { CancelComponent } from './ots/cancel/cancel.component';
 
 
 
@@ -51,9 +52,9 @@ const routes: Routes = [
          { path: 'material', component: MaterialComponent},
          { path: 'spareparts', component: SparepartsComponent},
          { path: 'tools', component: ToolsComponent},
-         { path: 'cancel', component: GenerateComponent},
+         { path: 'cancel', component: CancelComponent},
          { path: 'generate', component: GenerateComponent},
-         { path: 'tracing', component: TracingComponent},
+         { path: 'tracing', component: OtsactivasComponent},
          { path: 'alphabet', component: AlphabetComponent},
          { path: 'workarea', component: WorkareaComponent},
          { path: 'zone', component: ZoneComponent},

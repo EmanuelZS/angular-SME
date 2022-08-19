@@ -1,1 +1,207 @@
-<p>cancel works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                
+                <h2 class="text-center">Orden de trabajo  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                    <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                  </svg></h2>
+                  <div id="add-tech" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Pausar OT</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Usted está a punto de pausar la OT actual, al hacerlo la OT regresará a la cola de rutinas, con estado no concluida, donde podrá re agendarla para concluirla.</p>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">Pausar OT</button>
+                                <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">Pausar OT y asignar otro Trabajo</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+               <div class="form-group col-3">
+                <fieldset disabled="">
+                    <label for="disabledTextInput">No de Orden de trabajo</label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="E-8927">
+                </fieldset>
+                </div>
+
+                <div class="row g-3">
+            
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Edificio</strong>
+                        <a href="app-contact-detail.html">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Capilla_sud.JPG" class="img-circle w-25 img-fluid"> </a>
+                            <div>
+
+                                <span>Fresnos</span>
+                                <br>
+                                <span class="text-secondary">Dirección: 16 de septiembre #1234 Col. Centro, Puebla, Pue.</span>
+                                <hr>
+                            </div>
+                            
+                        
+                    </div>
+
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Técnico</strong>
+                        <a href="app-contact-detail.html">
+                            <img src="../assets/images/users/1.jpg" class="img-circle w-25 img-fluid"> </a>
+                            <div>
+
+                                <span>Mateo Pérez</span>
+                                <br>
+                                <span class="text-secondary">genelia@gmail.com</span>
+                                <br>
+                                <span class="text-secondary">+123 456 789</span>
+                                <hr>
+                            </div>
+                            
+                        
+                    </div>
+
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Prioridad  <span class="text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                          </svg></span></strong>
+                        
+                            <div>
+                                
+                                <br>
+                                <span class="label label-danger">Alta</span>
+                                <hr>
+                            </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Supervisor</strong>
+                        
+                            <div>
+
+                                <span>Fernando Herrera</span>
+                                
+                                <hr>
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Fecha de Mantenimiento</strong>
+                        
+                            <div>
+
+                                <span>25-08-2022</span>
+                                
+                                <hr>
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Area</strong>
+                        
+                            <div>
+
+                                <span>Eléctrica</span>
+                                
+                                <hr>
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Tipo</strong>
+                        
+                            <div>
+
+                                <span class="text-danger">Correctivo</span>
+                                
+                                <hr>
+                            </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Estado</strong>
+                        
+                            <div>
+
+                                <span class="label label-primary">Despachada</span>
+                                
+                                <hr>
+                            </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Tareas a realizar</strong>
+                        
+                        <div class="demo-checkbox">
+                            <input type="checkbox" id="md_checkbox_1" class="chk-col-blue" checked="">
+                            <label for="md_checkbox_1" class="col-6">Revision de sonido</label>
+                            <input type="checkbox" id="md_checkbox_2" class="chk-col-blue" checked="">
+                            <label for="md_checkbox_2" class="col-6">Revision de luces interiores</label>
+                            <input type="checkbox" id="md_checkbox_3" class="chk-col-blue" checked="">
+                            <label for="md_checkbox_3" class="col-6">Revisión de Bomba de agua</label>
+                            <input type="checkbox" id="md_checkbox_4" class="chk-col-blue" checked="">
+                            <label for="md_checkbox_4" class="col-6">Revisión de contactos</label>
+                            <input type="checkbox" id="md_checkbox_5" class="chk-col-blue" checked="">
+                            <label for="md_checkbox_5" class="col-6">Revisión de luces exteriores</label>
+                            <input type="checkbox" id="md_checkbox_6" class="chk-col-blue" checked="">
+                            <label for="md_checkbox_6" class="col-6">Revisión de sistema de video</label>
+                            <input type="checkbox" id="md_checkbox_7" class="chk-col-blue" checked="">
+                            <label for="md_checkbox_7" class="col-6">Revisón de clima y ventiladores</label>
+                            
+                        </div>
+                        <hr>
+                                
+                    </div>
+
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Refacción a cambiar</strong>
+                        
+                            <div>
+
+                                <span>Micrófono</span>
+                                
+                                <hr>
+                            </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <strong class="d-block h5 mb-0">Observaciónes del Técnico</strong>
+                        
+                            <div>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Micrófono sirve, pero tiene falso</li>
+                                    <li class="list-group-item">Se cambió conector completo</li>
+                                    <li class="list-group-item">Bocinas pronto requeriran mantenimiento</li>
+                                  </ul>
+                                
+                            </div>
+                            <br>
+                            <br>
+                    </div>
+
+                    <div class="col-md-6">
+                        <button type="button" data-toggle="modal" data-target="#add-tech" class="btn btn-outline-danger btnrounded btn-lg ">Pausar OT</button>
+                    </div>
+
+                    <div class="col-12">
+                        <strong class="d-block h5 mb-0">Progreso</strong>
+                        
+                        <div class="progress m-t-20">
+                            <div class="progress-bar bg-success" style="width: 75%; height:15px;" role="progressbar">75%</div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                  </div>
+
+
+            </div>
+        </div>
+    </div>
+</div> 

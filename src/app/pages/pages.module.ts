@@ -35,6 +35,10 @@ import { TripComponent } from './maps/trip/trip.component';
 import { EmergenciesComponent } from './noroutine/emergencies/emergencies.component';
 import { EventsComponent } from './noroutine/events/events.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MbscModule } from '@mobiscroll/angular';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 
 
 
@@ -82,7 +86,13 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     CommonModule,
     SharedModule,
     RouterModule,
-    ComponentsModule
+    ComponentsModule,
+    FormsModule,
+    MbscModule,
+    BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ]
 })
 export class PagesModule { }
